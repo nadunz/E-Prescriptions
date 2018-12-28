@@ -1,8 +1,4 @@
-# E-Prescriptions
-
-Web App + Mobile app to manage and store medical prescriptions issued by doctors
-
-## DoctorApp
+# DoctorApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
