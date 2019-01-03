@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+
 @Component({
 	templateUrl: './home.component.html'
 })
@@ -7,6 +8,5 @@ export class StarterComponent implements AfterViewInit {
 	constructor() {
 		this.subtitle = "This is some text within a card block."
 	}
-
 	ngAfterViewInit(){}
 }

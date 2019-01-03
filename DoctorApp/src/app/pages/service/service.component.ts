@@ -4,7 +4,7 @@ import 'rxjs/add/operator/debounceTime';
 
 @Component({
 	selector: '',
-	templateUrl: 'alert.component.html'
+	templateUrl: 'service.component.html'
 })
 
 export class NgbdAlertBasic implements OnInit{

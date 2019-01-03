@@ -3,7 +3,7 @@ import {NgbPanelChangeEvent} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
 	selector: 'ngbd-accordion-basic',
-	templateUrl: 'accordion.component.html'
+	templateUrl: 'patient.component.html'
 })
 export class NgbdAccordionBasic {
    beforeChange($event: NgbPanelChangeEvent) {

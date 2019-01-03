@@ -13,6 +13,7 @@ export class PageComponent implements OnInit {
     ngOnInit() {
         if (this.router.url === '/') {
             this.router.navigate(['/home']);
+            
         }
     }
 
