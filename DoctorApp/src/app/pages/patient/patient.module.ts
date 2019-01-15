@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JsonpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdAccordionBasic } from './patient.component';
+import { AddPatientComponent } from './add-patient/add-patient.component';
+import { ViewpatientComponent } from './viewpatient/viewpatient.component';
 
 export const routes: Routes = [
   {
@@ -29,7 +31,9 @@ export const routes: Routes = [
     NgbModule
   ],
   declarations: [
-    NgbdAccordionBasic
+    NgbdAccordionBasic,
+    AddPatientComponent,
+    ViewpatientComponent
   ]
 })
 

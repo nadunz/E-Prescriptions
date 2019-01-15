@@ -1,0 +1,23 @@
+
+<div class="card text-center">
+    <div class="card-header">
+        Patient Details
+    </div>
+    <div class="card-body">
+        
+        <a class="pull-center">
+            <div>
+            <img src="assets/images/users/{{patient.gender=='Male' ? 'male':'female'}}_patient.png" class="media-photo">
+            </div>	
+        </a>
+        <h4 class="card-title" style="font-weight: bold">{{patient.name}}</h4>
+        <h5 class="card-subtitle">{{patient.nic}}</h5>
+        <h5>
+            <span class="badge badge-pill badge-{{patient.gender=='Male' ? 'success':'warning'}}">{{patient.gender=='Male'?'MALE':'FEMALE'}}</span>
+        </h5>
+        <h5><span class="text-blue">Registered From - </span> {{patient.regDate}}</h5>
+        
+    </div>
+</div>
+
+	

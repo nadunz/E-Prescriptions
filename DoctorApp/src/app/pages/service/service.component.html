@@ -1,41 +1,54 @@
 <div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Basic Alert</h3>
-                <h6 class="card-subtitle">This is basic alert</h6>
-                <ngb-alert [dismissible]="false">
-			    <strong>Warning!</strong> Better check yourself, you're not looking too good.
-			  </ngb-alert>
-  					
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Closeable Alert</h3>
-                <h6 class="card-subtitle">This is closeable alert</h6>
-                <p *ngFor="let alert of alerts">
-				  <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
-				</p>
-				<p>
-				  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-				</p>
-  					
-            </div>
-        </div>
+    <div class="col-6">
+        
+        <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Service #1
+                        </button>
+                       
+                    </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <button type="button" class="btn btn-success" style="margin-right: 10px">Print</button>
+                                        <button type="button" class="btn btn-info">Edit</button>
+                                    </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
 
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Self Closing  Alert</h3>
-                <h6 class="card-subtitle">Static self-closing alert that disappears after 20 seconds (refresh the page if it has already disappeared)</h6>
-                <ngb-alert *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true">Check out our awesome new features!</ngb-alert>
-  				<p>Show a self-closing success message that disappears after 5 seconds.</p>
-  				<ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null">{{ successMessage }}</ngb-alert>	
-  				<p>
-				  <button class="btn btn-primary" (click)="changeSuccessMessage()">Change message</button>
-				</p>
-            </div>
-        </div>
 
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Service #2
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Prescription</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <button type="button" class="btn btn-success" style="margin-right: 10px">Print</button>
+                                        <button type="button" class="btn btn-info">Edit</button>
+                                    </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+             
     </div>
 </div>

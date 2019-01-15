@@ -1,0 +1,29 @@
+
+    .media-photo {
+        width: 35px;
+        margin-right: 10px;
+    }
+    .media-meta {
+        font-size: 11px;
+        color: #999;
+    }
+    .media .title {
+        color: #2BBCDE;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: normal;
+        margin: 0;
+    }
+    .media .title span {
+        font-size: .8em;
+        margin-right: 20px;
+    }
+    .media .title span.Male {
+        color: #5cb85c;
+    }
+    .media .title span.Female {
+        color: #381716;
+    }
+    .media .summary {
+        font-size: 14px;
+    }

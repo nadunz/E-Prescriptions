@@ -11,8 +11,8 @@ export const routes: Routes = [
       path: '',
       component: NgbdAlertBasic,
       data: {
-        title: 'Alert',
-        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Alert'}]
+        title: 'Service',
+        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Service'}]
       }
     
   }
@@ -29,9 +29,7 @@ export const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [
-   
     NgbdAlertBasic
-    
   ]
 })
 
