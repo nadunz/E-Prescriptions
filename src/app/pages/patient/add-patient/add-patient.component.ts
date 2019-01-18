@@ -17,11 +17,11 @@ export class AddPatientComponent implements OnInit {
   ngOnInit() {
   }
 
-  patient = new Patient(null,null,'Male',null,null);
+  patient = new Patient(null,null,'Male',null,null,null);
 
   onSubmitPatient(formData:NgForm):void{
     console.log(this.patient);
-    this.patient = formData.value
+    this.patient = formData.value;
     this.patientViewComp.patients.push(this.patient);
   }
 

@@ -2,12 +2,11 @@ import { Patient } from './Patient';
 import { Time } from '@angular/common';
 
 export class Service{
-
-    patient: Patient;
+    
     serviceId: number;
+    patientId: string;
+    subject: string;
     prescription: string;
     date: Date;
-    time: Time;
-
 
 }

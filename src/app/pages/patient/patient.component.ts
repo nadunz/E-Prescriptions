@@ -19,10 +19,10 @@ export class NgbdAccordionBasic implements OnInit{
   ngOnInit(): void {
     // seeding initial data
       this.patients.push(
-        new Patient('Nadun','940272645V','Male','December 13, 2018',null),
-        new Patient('Kasuni','940272545V','Female','December 25, 2018',null),
-        new Patient('Kumara','940252645V','Male','December 13, 2018',null),
-        new Patient('Chamari','940275645V','Female','January 7, 2019',null)
+        new Patient('Nadun','940272645V','Male','December 13, 2018','nadunp94@gmail.com','0770443148'),
+        new Patient('Kasuni','940272545V','Female','December 25, 2018',null,'0710553148'),
+        new Patient('Kumara','940252645V','Male','December 13, 2018',null,'0780443148'),
+        new Patient('Chamari','940275645V','Female','January 7, 2019',null,'0770111148')
       );
   }
   

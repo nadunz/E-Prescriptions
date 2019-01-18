@@ -15,6 +15,8 @@
         <h5>
             <span class="badge badge-pill badge-{{patient.gender=='Male' ? 'success':'warning'}}">{{patient.gender=='Male'?'MALE':'FEMALE'}}</span>
         </h5>
+        <h5><span class="text-blue" *ngIf="patient.email">Email - </span> {{patient.email}}</h5>
+        <h5><span class="text-blue">Contact - </span> {{patient.phone}}</h5>
         <h5><span class="text-blue">Registered From - </span> {{patient.regDate}}</h5>
         
     </div>
